@@ -7,7 +7,7 @@ The layout is such everything under the app dir is play related and everything u
 By using grunt, bower, yeoman for the frontend build and sbt for the backend we have the perfect mix.
 
 
-# Start the MoFo up!
+# Start Play!
 
     play
 
