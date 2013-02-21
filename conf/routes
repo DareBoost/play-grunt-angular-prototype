@@ -1,0 +1,9 @@
+# Routes
+
+GET      /public/*file                                                controllers.Assets.at(path = "/public", file)
+GET      /views/*file                                                 controllers.UIViews.at(path = "/ui/app/views", file)
+
+->       /api                                                         api.Routes
+
+GET      /                                                            controllers.Application.index(path = "")
+GET      /*path                                                       controllers.Application.index(path)

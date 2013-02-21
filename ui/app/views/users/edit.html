@@ -1,0 +1,15 @@
+<h1 class="page-header">User {{user.firstName}}</h1>
+
+<form name="form" ng-submit="save(user);">
+    <button class="pull-right btn btn-danger" ng-click="remove(user)">Delete</button>
+
+    <fieldset>
+        <label>Firstname</label>
+        <input type="text" ng-model="user.firstName" ng-required />
+
+        <label>Email</label>
+        <input type="email" ng-model="user.email" ng-required />
+    </fieldset>
+
+    <button class="btn btn-primary" type="submit" ng-disabled="form.$invalid">Save</button>
+</form>
