@@ -15,3 +15,5 @@ dist
 /.settings
 /ui/components
 /ui/node_modules
+
+/npm-debug.log
