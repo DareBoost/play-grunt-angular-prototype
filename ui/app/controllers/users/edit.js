@@ -5,14 +5,14 @@ angular.module('app').controller('UserEditCtrl', ['$scope', '$routeParams', '$lo
 
   $scope.save = function (user) {
     user.$save({userId: user.id}, function (user) {
-        console.log('save', user);
+      console.log('save', user);
     });
-  }
+  };
 
-  $scope.remove = function(user) {
-    user.$remove({userId: user.id}, function (user) {
-        $location.path = '/users';
-    })
-  }
+  $scope.remove = function (user) {
+    user.$remove({userId: user.id}, function () {
+      $location.path = '/users';
+    });
+  };
 
 }]);
